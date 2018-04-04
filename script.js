@@ -28,6 +28,10 @@ var Game = function (i_name) {
   } 
     var x = Math.floor(Math.random() * 10); 
     var y = Math.floor(Math.random() * 10);
+    while(playground[x][y]!=null) {
+      x = Math.floor(Math.random() * 10); 
+      y = Math.floor(Math.random() * 10);
+    }
     
     console.log("Shooting at [" + x + "," + y + "]");
     
