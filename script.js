@@ -106,7 +106,7 @@ var Game = function (i_name) {
 };
 
 $(document).ready(function() {
-	var game = new Game("Syslik");
+	var game = new Game("Homolkova");
 	game.register();
   setInterval(game.turn, 2000);
 });
